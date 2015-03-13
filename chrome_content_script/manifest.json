@@ -15,11 +15,15 @@
   "content_scripts":  [
     {
       "matches": ["https://www.yahoo.com/*"],
-      "js": ["initiate_code.js"]
+      "js": ["jquery.js", "initiate_code.js"],
+      "run_at": "document_end"
     }
   ],
   "page_action" : {
     "default_icon" : "assets/icon_16.png",
     "default_title": "bluetooth"
-  }
+  },
+  "background": {
+      "scripts": ["background.js"]
+    }
 }
