@@ -14,9 +14,8 @@
    },
   "content_scripts":  [
     {
-      "matches": ["https://www.yahoo.com/*"],
-      "js": ["jquery.js", "initiate_code.js"],
-      "run_at": "document_end"
+      "matches": ["*://*.yahoo.com/*"],
+      "js": ["jquery.js", "initiate_code.js"]
     }
   ],
   "page_action" : {
